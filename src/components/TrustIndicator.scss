@@ -1,0 +1,30 @@
+// Styles for the Trust indicator, which is the avatar image with trust value
+
+.trust-container {
+  display: inline-flex;
+  position: absolute;
+  top: -30px;
+  left: 1rem;
+  & .indicator {
+    stroke-linecap: round;
+    color: linear-gradient(188.8deg, #fa5d75 6.7%, rgba(120, 100, 246, 0.67) 65.76%);
+    fill: currentColor;
+  }
+  & .avatar {
+    height: 80px;
+    width: 80px;
+  }
+  & .badge-container {
+    position: absolute;
+    top: 0;
+    & .badge {
+      width: 1.5rem;
+      height: 1.5rem;
+      background: #6a3eea;
+      border-radius: 100%;
+      font-size: calc(1rem - 3px);
+      font-weight: 500;
+      color: white;
+    }
+  }
+}
