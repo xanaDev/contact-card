@@ -1,0 +1,49 @@
+// Styles for the whole card layout
+
+.card {
+  position: relative;
+  overflow: visible;
+  box-shadow: none;
+  min-width: 350px;
+  .card-body {
+    display: flex;
+    font-size: 1.25rem;
+    justify-content: center;
+    & .contact-details {
+      text-align: left;
+      margin-left: 7rem;
+      & .contact-details__name {
+        font-size: calc(1rem + 2px);
+        font-weight: 500;
+      }
+      & .contact-details__role {
+        font-weight: 400;
+        color: #818181;
+      }
+    }
+    & .call-to-action {
+      align-self: flex-start;
+      border: 1px solid #835bf9;
+      border-radius: 8px;
+      background-color: #eae8fe;
+      margin-left: 3rem;
+    }
+  }
+}
+
+.footer {
+  padding: 0.5rem 1.5rem;
+  background-color: #eae8fe;
+  color: #8463e7;
+  font-size: calc(1rem - 2px);
+  font-weight: 400;
+  justify-content: center;
+  border-bottom-right-radius: 8px;
+  border-bottom-left-radius: 8px;
+  & .footer-link {
+    display: inline-block;
+    font-weight: 600;
+    padding: 0 0.25rem;
+    text-decoration: underline;
+  }
+}
