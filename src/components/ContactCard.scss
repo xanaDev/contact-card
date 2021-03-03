@@ -5,6 +5,7 @@
   overflow: visible;
   box-shadow: none;
   min-width: 350px;
+  font-family: "Poppins", sans-serif;
   .card-body {
     display: flex;
     font-size: 1.25rem;
@@ -15,10 +16,12 @@
       & .contact-details__name {
         font-size: calc(1rem + 2px);
         font-weight: 500;
+        font-family: inherit;
       }
       & .contact-details__role {
         font-weight: 400;
         color: #818181;
+        font-family: inherit;
       }
     }
     & .call-to-action {
